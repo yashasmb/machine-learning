@@ -71,12 +71,15 @@ a = np.array([1, 2, 3, 4])
 # print(ma.dtype)
 # print(ma.ndim)
 # print(len(ma))
-# print(ma[:,0])
-# print(ma[0,:])
-# print(ma.T)#transpose
-# # np.linalg.inv(square-array)   used to inverse a matrix
-# # np.linalg.det(square-array)   used to find thd determinate of matrix
-# print(np.diag(ma))# makes a list of diagonal element
+
+# ma[r, c]    #specific element
+# ma[r, :]    #specific row
+# ma[:, c]    #specific colomn
+
+# print(ma.T)                     #transpose
+# # np.linalg.inv(square-array)   #used to inverse a matrix
+# # np.linalg.det(square-array)   #used to find thd determinate of matrix
+# print(np.diag(ma))              # makes a list of diagonal element
 #
 #
 # # --- end-of-multi dimensional  array---
@@ -96,3 +99,7 @@ a = np.array([1, 2, 3, 4])
 
 # a = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
 # print(a)
+
+
+c= np.zeros(3)
+print(c)
