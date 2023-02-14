@@ -62,7 +62,6 @@ a = np.array([1, 2, 3, 4])
 
 
 
-
 # # --- multi dimensional  array---
 #
 #
@@ -72,6 +71,7 @@ a = np.array([1, 2, 3, 4])
 # print(ma.ndim)
 # print(len(ma))
 
+# [row , coloum]
 # ma[r, c]    #specific element
 # ma[r, :]    #specific row
 # ma[:, c]    #specific colomn
@@ -86,6 +86,56 @@ a = np.array([1, 2, 3, 4])
 
 
 
+# #---- reorganising array-----
+# before =np.array([[1,2,3,4],[5,6,7,8]])
+# # print(before)
+#
+# after = before.reshape(1,8)
+# # print(after)
+#
+# # stacking vectors
+# v1 = np.array([1,2,3,4])
+# v2 = np.array([5,6,7,8])
+# print(np.vstack([v1,v2,v1]))# vertical stacking
+# print(np.hstack([v1,v2,v1]))# horizontal stacking
+#
+#
+# h1 =np.ones((4,2))
+# print(h1)
+# h2 = np.zeros((4,2))
+# print(h2)
+# print("------------------------")
+# print(np.vstack([h1,h2]))
+# print("------------------------")
+# print(np.hstack([h1,h2]))
+#
+#
+# #---- end-of- reorganising array-----
+
+
+# # -----miscellaneous----
+#
+# #loading the data from file
+# filedata = np.genfromtxt('data.txt', delimiter=',')# it is used to get the data from the txt file
+#
+# filedata.astype('int32')# this does not mack changes to the original file , which means that it is the copyof filedata with the int32
+# filedata = filedata.astype('int32')
+#
+# #Boolean masking and advanced indexing
+# # with the above eg
+# filedata>50 # upon printing this, there is a array of boolean value
+# filedata[filedata>50]#this gives the array of numbers grater than 50
+#
+# np.any(filedata>50,axis=0)
+#
+#
+#
+#
+# ex = np.array([00,10,20,30,40,50,60,70,80,90])
+# print(ex<50)
+# print(ex[ex<50])
+#
+# # ---- end-of miscellaneous
 
 
 # a = np.arange(6)
@@ -101,5 +151,8 @@ a = np.array([1, 2, 3, 4])
 # print(a)
 
 
-c= np.zeros(3)
-print(c)
+# c= np.zeros(3)
+# print(c)
+# print("------------------------")
+
+
